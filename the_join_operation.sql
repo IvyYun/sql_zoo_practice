@@ -46,6 +46,10 @@ SELECT player,teamid,stadium,mdate
  WHERE teamid='GER'
 ;
 
+SELECT player,teamid,stadium,mdate
+FROM game a
+JOIN goal b ON a.id=b.matchid
+WHERE teamid = 'GER';
 
 -- 4.
 -- Use the same JOIN as in the previous question.
